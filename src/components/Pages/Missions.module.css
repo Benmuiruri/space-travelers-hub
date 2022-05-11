@@ -2,3 +2,13 @@
   margin: 0 auto;
   width: 65%;
 }
+
+.leave-button {
+  color: red;
+  border-color: red;
+}
+
+.join-button {
+  color: #6ed8c7;;
+  border-color: #6ed8c7;;
+}

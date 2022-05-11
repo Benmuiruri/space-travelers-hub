@@ -43,7 +43,7 @@ const Missions = () => {
                   {!mission.joined && (
                     <button
                       type="button"
-                      className={classes['action-button']}
+                      className={classes['join-button']}
                       onClick={() => {
                         dispatch(joinMission(mission.id));
                       }}
@@ -54,7 +54,7 @@ const Missions = () => {
                   {mission.joined && (
                     <button
                       type="button"
-                      className={classes['action-button']}
+                      className={classes['leave-button']}
                       onClick={() => {
                         dispatch(leaveMission(mission.id));
                       }}
