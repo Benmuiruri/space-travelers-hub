@@ -36,15 +36,28 @@ const Missions = () => {
                   <span> Not a member </span>
                 </td>
                 <td>
-                  <button
-                    type="button"
-                    className={classes['action-button']}
-                    onClick={() => {
-                      dispatch(joinMission(mission.id));
-                    }}
-                  >
-                    Join Mission
-                  </button>
+                  {!mission.joined && (
+                    <button
+                      type="button"
+                      className={classes['action-button']}
+                      onClick={() => {
+                        dispatch(joinMission(mission.id));
+                      }}
+                    >
+                      Join Mission
+                    </button>
+                  )}
+                  {mission.joined && (
+                    <button
+                      type="button"
+                      className={classes['action-button']}
+                      onClick={() => {
+                        dispatch(joinMission(mission.id));
+                      }}
+                    >
+                      Leave Mission
+                    </button>
+                  )}
                 </td>
               </tr>
             ))}
