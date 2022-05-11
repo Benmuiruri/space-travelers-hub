@@ -5,6 +5,7 @@ import Missions from './components/Pages/Missions';
 import Profile from './components/Pages/Profile';
 import Rockets from './components/Pages/Rockets';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
