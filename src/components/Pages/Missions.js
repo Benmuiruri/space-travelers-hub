@@ -37,7 +37,8 @@ const Missions = () => {
                 <td>{mission.name}</td>
                 <td>{mission.description}</td>
                 <td>
-                  <span> Not a member </span>
+                  {!mission.joined && <span> Not a member </span>}
+                  {mission.joined && <span> Active member </span>}
                 </td>
                 <td>
                   {!mission.joined && (
