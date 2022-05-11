@@ -11,7 +11,7 @@ const Missions = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     // @ts-ignore
-    if (missions.length) dispatch(getAllMissions());
+    dispatch(getAllMissions());
   }, []);
 
   if (missions.length) {
