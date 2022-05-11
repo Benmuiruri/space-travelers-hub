@@ -36,7 +36,14 @@ const Missions = () => {
                   <span> Not a member </span>
                 </td>
                 <td>
-                  <button type="button" className={classes['action-button']}>
+                  <button
+                    type='button'
+                    className={classes['action-button']}
+                    onClick={() => {
+                      // @ts-ignore
+                      dispatch(joinMission(mission.id));
+                    }}
+                  >
                     Join Mission
                   </button>
                 </td>
