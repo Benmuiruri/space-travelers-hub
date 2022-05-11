@@ -37,14 +37,14 @@ const Missions = () => {
                 <td>{mission.name}</td>
                 <td>{mission.description}</td>
                 <td>
-                  {!mission.joined && <span> Not a member </span>}
-                  {mission.joined && <span> Active member </span>}
+                  {!mission.joined && <span className={`${classes.status} ${classes['non-member']}`}> Not a member </span>}
+                  {mission.joined && <span className={`${classes.status} ${classes['active-member']}`}> Active member </span>}
                 </td>
                 <td>
                   {!mission.joined && (
                     <button
                       type="button"
-                      className={classes['join-button']}
+                      className={`${classes.missionBtn} ${classes['join-button']}`}
                       onClick={() => {
                         dispatch(joinMission(mission.id));
                       }}
@@ -55,7 +55,7 @@ const Missions = () => {
                   {mission.joined && (
                     <button
                       type="button"
-                      className={classes['leave-button']}
+                      className={`${classes.missionBtn} ${classes['leave-button']}`}
                       onClick={() => {
                         dispatch(leaveMission(mission.id));
                       }}
