@@ -2,7 +2,7 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Table from 'react-bootstrap/Table';
-import { getAllMissions } from '../../redux/missions/missions';
+import { getAllMissions, joinMission } from '../../redux/missions/missions';
 import classes from './Missions.module.css';
 
 const Missions = () => {
@@ -37,10 +37,9 @@ const Missions = () => {
                 </td>
                 <td>
                   <button
-                    type='button'
+                    type="button"
                     className={classes['action-button']}
                     onClick={() => {
-                      // @ts-ignore
                       dispatch(joinMission(mission.id));
                     }}
                   >

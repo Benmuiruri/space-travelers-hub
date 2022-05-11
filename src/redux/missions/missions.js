@@ -7,9 +7,9 @@ export default function reducer(state = initialState, action) {
   const { type, payload } = action;
   switch (type) {
     case GET_MISSIONS:
-      return payload.missions;
+      return [...state, ...payload.missions];
     case JOIN_MISSION:
-      return state.map((mis) => (mis.id === payload.id ? { ...mis, joined: true } : mis));
+      return state.map((mis) => (mis.id === action.payload.id ? { ...mis, joined: true } : mis));
     default:
       return state;
   }
@@ -37,7 +37,7 @@ export const getAllMissions = () => (dispatch) => {
 };
 
 export const joinMission = (id) => ({
-  type: GET_MISSIONS,
+  type: JOIN_MISSION,
   payload: {
     id,
   },
