@@ -9,7 +9,7 @@ export default function reducer(state = initialState, action) {
     case GET_MISSIONS:
       return payload.missions;
     case JOIN_MISSION:
-      return payload.missions;
+      return state.map((mis) => (mis.id === payload.id ? { ...mis, joined: true } : mis));
     default:
       return state;
   }
