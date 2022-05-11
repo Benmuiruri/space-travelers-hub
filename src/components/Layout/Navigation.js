@@ -22,22 +22,24 @@ function Navigation() {
   ];
 
   return (
-    <nav className={styles.headerNav}>
-      <Header />
-      <ul className={styles.navigation}>
-        {mainLinks.map((link) => (
-          <li key={link.id} className={styles.navLink}>
-            <NavLink
-              data-testid={link.id}
-              to={link.path}
-              className={styles.link}
-            >
-              {link.text}
-            </NavLink>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <header className={styles.header}>
+      <nav className={styles.headerNav}>
+        <Header />
+        <ul className={styles.navigation}>
+          {mainLinks.map((link) => (
+            <li key={link.id} className={styles.navLink}>
+              <NavLink
+                data-testid={link.id}
+                to={link.path}
+                className={styles.link}
+              >
+                {link.text}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </header>
   );
 }
 
