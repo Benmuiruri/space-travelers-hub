@@ -19,7 +19,7 @@ const Missions = () => {
   }, []);
   return (
     <section className={classes.missionsContainer}>
-      <h2>Missions Page</h2>
+      <h2 className={classes.header}>Missions Page</h2>
       <Table striped bordered hover>
         <thead>
           <tr>
