@@ -10,7 +10,7 @@ const Profile = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     // @ts-ignore
-    if (missions.length === 0) dispatch(getAllMissions());
+    if (!missions.length) dispatch(getAllMissions());
   }, []);
   return (
     <section className={classes.profileContainer}>
