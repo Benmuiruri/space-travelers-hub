@@ -47,6 +47,7 @@ const Missions = () => {
                       className={`${classes.missionBtn} ${classes['join-button']}`}
                       onClick={() => {
                         dispatch(joinMission(mission.id));
+                        console.log(missions);
                       }}
                     >
                       Join Mission
