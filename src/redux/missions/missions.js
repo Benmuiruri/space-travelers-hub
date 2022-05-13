@@ -1,7 +1,7 @@
 const URL = 'https://api.spacexdata.com/v3/missions';
 const GET_MISSIONS = 'spaceTraveler/missions/GET_MISSIONS';
-const JOIN_MISSION = 'spaceTraveler/missions/JOIN_MISSIONS';
-const LEAVE_MISSION = 'spaceTraveler/missions/LEAVE_MISSIONS';
+const JOIN_MISSION = 'spaceTraveler/missions/JOIN_MISSION';
+const LEAVE_MISSION = 'spaceTraveler/missions/LEAVE_MISSION';
 
 const initialState = [];
 export default function reducer(state = initialState, action) {

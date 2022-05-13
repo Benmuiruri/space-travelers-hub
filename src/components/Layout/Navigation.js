@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import Header from './Header';
-import styles from './Navigation.module.css';
+import classes from './Navigation.module.css';
 
 function Navigation() {
   const mainLinks = [
@@ -22,16 +22,18 @@ function Navigation() {
   ];
 
   return (
-    <header className={styles.header}>
-      <nav className={styles.headerNav}>
+    <header className={classes.header}>
+      <nav className={classes.headerNav}>
         <Header />
-        <ul className={styles.navigation}>
+        <ul className={classes.navigation}>
           {mainLinks.map((link) => (
-            <li key={link.id} className={styles.navLink}>
+            <li key={link.id} className={classes.navLink}>
               <NavLink
+                // @ts-ignore
+                activeClassName={classes.underline}
                 data-testid={link.id}
                 to={link.path}
-                className={styles.link}
+                className={({ isActive }) => (isActive ? `${classes.link} ${classes['active-link']}` : classes.link)}
               >
                 {link.text}
               </NavLink>
