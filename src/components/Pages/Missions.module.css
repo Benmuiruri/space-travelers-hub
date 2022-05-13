@@ -2,3 +2,43 @@
   margin: 0 auto;
   width: 65%;
 }
+
+.missionBtn {
+  border-radius: 0.5rem;
+  font-size: 0.85em;
+  font-weight: 700;
+  margin-top: 2em;
+  min-width: 8em;
+  padding: 0.3em;
+}
+
+.leave-button {
+  color: red;
+  border-color: red;
+}
+
+.join-button {
+  color: #6ed8c7;
+  border-color: #6ed8c7;
+}
+
+.status {
+  display: block;
+  border-radius: 0.9em;
+  font-size: 0.7em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 2.7em;
+  min-width: 10em;
+  padding: 0.5em;
+  color: #fff;
+}
+
+.active-member {
+  background: #6ed8c7;
+}
+
+.non-member {
+  background: #323333;
+}

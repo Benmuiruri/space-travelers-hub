@@ -1,6 +1,7 @@
 const URL = 'https://api.spacexdata.com/v3/missions';
 const GET_MISSIONS = 'spaceTraveler/missions/GET_MISSIONS';
 const JOIN_MISSION = 'spaceTraveler/missions/JOIN_MISSIONS';
+const LEAVE_MISSION = 'spaceTraveler/missions/LEAVE_MISSIONS';
 
 const initialState = [];
 export default function reducer(state = initialState, action) {
@@ -10,6 +11,8 @@ export default function reducer(state = initialState, action) {
       return [...state, ...payload.missions];
     case JOIN_MISSION:
       return state.map((mis) => (mis.id === action.payload.id ? { ...mis, joined: true } : mis));
+    case LEAVE_MISSION:
+      return state.map((mis) => (mis.id === action.payload.id ? { ...mis, joined: false } : mis));
     default:
       return state;
   }
@@ -38,6 +41,13 @@ export const getAllMissions = () => (dispatch) => {
 
 export const joinMission = (id) => ({
   type: JOIN_MISSION,
+  payload: {
+    id,
+  },
+});
+
+export const leaveMission = (id) => ({
+  type: LEAVE_MISSION,
   payload: {
     id,
   },
