@@ -1,6 +1,5 @@
 .logo-div {
   display: flex;
-  align-items: flex-end;
   align-items: center;
 }
 
@@ -17,4 +16,6 @@
 .header-link span {
   color: #6ed8c7;
   font-size: 1em;
+  padding-left: 0.5em;
+  text-transform: uppercase;
 }

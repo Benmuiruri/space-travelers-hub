@@ -23,8 +23,8 @@ function Navigation() {
 
   return (
     <header className={classes.header}>
+      <Header />
       <nav className={classes.headerNav}>
-        <Header />
         <ul className={classes.navigation}>
           {mainLinks.map((link) => (
             <li key={link.id} className={classes.navLink}>
