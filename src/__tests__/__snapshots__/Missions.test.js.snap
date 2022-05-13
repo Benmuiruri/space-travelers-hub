@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test presence of Missions component renders the Missions component correctly 1`] = `
+<section
+  className="missionsContainer"
+>
+  <h2
+    className="header"
+  >
+    Missions Page
+  </h2>
+  <table
+    className="table table-striped table-bordered table-hover"
+  >
+    <thead>
+      <tr>
+        <th>
+          Mission Name
+        </th>
+        <th>
+          Mission Description
+        </th>
+        <th>
+          Mission Status
+        </th>
+        <th>
+          Actions
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td />
+        <td>
+          The famous Apolo mission
+        </td>
+        <td>
+          <span
+            className="status non-member"
+          >
+             
+            Not a member
+             
+          </span>
+        </td>
+        <td>
+          <button
+            className="missionBtn join-button"
+            onClick={[Function]}
+            type="button"
+          >
+            Join Mission
+          </button>
+        </td>
+      </tr>
+      ;
+    </tbody>
+  </table>
+</section>
+`;
