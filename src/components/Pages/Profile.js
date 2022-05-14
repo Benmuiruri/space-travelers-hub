@@ -21,24 +21,39 @@ const Profile = () => {
     }
   }, []);
   return (
-    <section className={classes.profileContainer}>
+    <>
       <h2>My Profile</h2>
-      <Table striped bordered hover>
-        <thead>
-          <tr>
-            <th>Joined Missions</th>
-            <th>Reserved Rockets</th>
-          </tr>
-        </thead>
-        <tbody>
-          {missions.map((mission) => (
-            <tr key={mission.id}>
-              <td>{mission.name}</td>
+      <section className={classes.profileContainer}>
+        <Table className={classes.table} striped bordered hover>
+          <thead>
+            <tr>
+              <th>Joined Missions</th>
             </tr>
-          ))}
-        </tbody>
-      </Table>
-    </section>
+          </thead>
+          <tbody>
+            {missions.map((mission) => (
+              <tr key={mission.id}>
+                <td>{mission.name}</td>
+              </tr>
+            ))}
+          </tbody>
+        </Table>
+        <Table className={classes.table} striped bordered hover>
+          <thead>
+            <tr>
+              <th>Reserved Rockets</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rockets.map((rocket) => (
+              <tr key={rocket.id}>
+                <td>{rocket.name}</td>
+              </tr>
+            ))}
+          </tbody>
+        </Table>
+      </section>
+    </>
   );
 };
 export default Profile;
