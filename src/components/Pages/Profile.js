@@ -11,12 +11,15 @@ const Profile = () => {
   const missions = useSelector((state) => state.missions.filter((mission) => mission.joined));
   const dispatch = useDispatch();
 
+  // @ts-ignore
   const rockets = useSelector((state) => state.rockets.filter((rocket) => rocket.reservation));
 
   useEffect(() => {
     // @ts-ignore
     if (!missions.length && !rockets.length) {
+      // @ts-ignore
       dispatch(getAllMissions());
+      // @ts-ignore
       dispatch(fetchRocketsAPI());
     }
   }, []);
