@@ -1,9 +1,26 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
+## Preview
+
+<p align="center">Missions Page</p>
+
+<img src="./src/assets/missions.png">
+
+<p align="center">Rockets Page</p>
+
+<img src="./src/assets/rockets.png">
+
+<p align="center">Profile Page</p>
+
+<img src="./src/assets/profile.png">
+
 <h1 align="center">Space Travelers</h1>
 
-> A web application for a company that provides commercial and scientific space travel services.
-> Live Link coming soon
+> A web application for a company that provides commercial and scientific space travel services. To Infinity and Beyond!
+
+## Live Link 
+
+[Space Travelers](https://spacex-travelers.netlify.app)
 
 ## Built With
 
@@ -28,7 +45,6 @@ To get a local copy up and running follow these setup steps below.
 - GitHub: [Ben Kiarie](https://github.com/Benmuiruri) and [Regiss Mukubiza](https://github.com/Regiss05)
 - Twitter: [Optimize](https://twitter.com/_optimize)
 - LinkedIn: [Ben Kiarie](https://www.linkedin.com/in/benjamin-kiarie-180b66149/)
-
 
 ## 🤝 Contributing
 

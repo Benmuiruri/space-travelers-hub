@@ -1,0 +1,9 @@
+.profileContainer {
+  margin: 0 auto;
+  width: 65%;
+  display: flex;
+}
+
+.table {
+  width: 45%;
+}
