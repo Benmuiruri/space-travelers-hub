@@ -1,3 +1,7 @@
+.container {
+  margin: auto 10rem;
+}
+
 .rockets-section {
   display: flex;
   flex-direction: column;
