@@ -16,7 +16,7 @@
 
 <h1 align="center">Space Travelers</h1>
 
-> A web application for a company that provides commercial and scientific space travel services. To Infinity and Beyond!!
+> A web application for a company that provides commercial and scientific space travel services. To Infinity and Beyond!
 
 ## Live Link 
 
