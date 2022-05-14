@@ -16,11 +16,11 @@
 
 <h1 align="center">Space Travelers</h1>
 
-> A web application for a company that provides commercial and scientific space travel services.
+> A web application for a company that provides commercial and scientific space travel services. To Infinity and Beyond!!
 
 ## Live Link 
 
-[Space Travelers](spacex-travelers.netlify.app)
+[Space Travelers](https://spacex-travelers.netlify.app)
 
 ## Built With
 
