@@ -30,11 +30,11 @@ const ElementRockets = (props) => {
           { `${desc}` }
         </p>
         { reserved ? (
-          <Button type="button" className={styles.removeReservation} onClick={handleRemoveReserveClick}>
+          <Button type="button" variant="danger" className={styles.removeReservation} onClick={handleRemoveReserveClick}>
             Cancel Reservation
           </Button>
         ) : (
-          <Button type="button" variant="danger" className={styles.addReservation} onClick={handleReserveClick}>
+          <Button type="button" className={styles.addReservation} onClick={handleReserveClick}>
             Reserve Rocket
           </Button>
         )}
