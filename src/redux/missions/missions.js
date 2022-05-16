@@ -1,3 +1,4 @@
+/* eslint-disable no-case-declarations */
 const URL = 'https://api.spacexdata.com/v3/missions';
 const GET_MISSIONS = 'spaceTraveler/missions/GET_MISSIONS';
 const JOIN_MISSION = 'spaceTraveler/missions/JOIN_MISSION';
@@ -9,10 +10,21 @@ export default function reducer(state = initialState, action) {
   switch (type) {
     case GET_MISSIONS:
       return [...state, ...payload.missions];
-    case JOIN_MISSION:
-      return state.map((mis) => (mis.id === action.payload.id ? { ...mis, joined: true } : mis));
-    case LEAVE_MISSION:
-      return state.map((mis) => (mis.id === action.payload.id ? { ...mis, joined: false } : mis));
+    case JOIN_MISSION: {
+      const newState = state.map((mission) => {
+        if (mission.id !== payload.id) return mission;
+        return { ...mission, joined: true };
+      });
+      return [...newState];
+    }
+
+    case LEAVE_MISSION: {
+      const newState = state.map((mission) => {
+        if (mission.id !== payload.id) return mission;
+        return { ...mission, joined: false };
+      });
+      return [...newState];
+    }
     default:
       return state;
   }
