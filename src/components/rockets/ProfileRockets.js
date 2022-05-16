@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+// @ts-ignore
 import { PropTypes } from 'prop-types';
 import Button from 'react-bootstrap/Button';
 import { removeRocketReservation } from '../../redux/rockets/rockets';
