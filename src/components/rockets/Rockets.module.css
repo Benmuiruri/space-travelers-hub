@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600&display=swap');
+
+html {
+  font-family: 'Raleway', sans-serif;
+}
+
 .container {
   margin: auto 10rem;
 }
@@ -22,21 +28,22 @@
 .rocketDescription {
   display: flex;
   flex-direction: column;
-  gap: 1.8rem;
+  gap: 1.2rem;
   justify-content: flex-start;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 1.6em;
   font-weight: 500;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 0.9em;
   line-height: 1.4;
+  text-align: left;
 }
 
-span {
+.rocketSpan {
   background-color: #ffa500;
   color: #fff;
   border-radius: 5px;
@@ -45,21 +52,17 @@ span {
 }
 
 .addReservation {
-  width: 15rem;
-  height: 4rem;
-  font-size: 1.5rem;
-  background-color: #007bff;
-  cursor: pointer;
-  border: 0;
-  border-radius: 5px;
+  background-color: #6ed8c7;
   color: #fff;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
   transition: background-color linear 0.2s;
+  width: fit-content;
 }
 
 .removeReservation {
-  width: 16rem;
-  height: 4rem;
-  font-size: 1.5rem;
+  width: fit-content;
   font-weight: bold;
   background-color: transparent;
   cursor: pointer;

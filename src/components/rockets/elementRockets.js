@@ -1,4 +1,5 @@
 import { useDispatch } from 'react-redux';
+// @ts-ignore
 import { PropTypes } from 'prop-types';
 import Button from 'react-bootstrap/Button';
 import { addRocketReservation, removeRocketReservation } from '../../redux/rockets/rockets';
@@ -25,7 +26,7 @@ const ElementRockets = (props) => {
       <div className={styles.rocketDescription}>
         <h2>{name}</h2>
         <p>
-          { reserved && <span>Reserved</span>}
+          { reserved && <span className={styles.rocketSpan}>Reserved</span>}
           { `${desc}` }
         </p>
         { reserved ? (
